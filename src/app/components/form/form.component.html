@@ -1,0 +1,66 @@
+<div class="event-entry-meta pull-right">
+    <div class="k2t-branch-confirm w100 k2t-step1-right pull-right">
+        <form ngNativeValidate [formGroup]="formulario" (ngSubmit)="registrarStepOne();">
+            <p class="title-confirm">Book Now</p>
+            <p class="sub-title-confirm">Exclusive Online Site Offer</p>
+            <div class="pull-left w100">
+
+                <span class="relative pull-left w100">
+                    <input formControlName="name" name="name" class="k2t-input pull-left w100" placeholder="Fullname" />
+                </span>
+                <span class="relative pull-left w100">
+                    <input formControlName="email" name="email" class="k2t-input pull-left w100" placeholder="Email" />
+                </span>
+                <span class="relative pull-left w100">
+                    <input formControlName="phone" name="phone" class="k2t-input pull-left w100" placeholder="Phone" />
+                </span>
+
+                <span class="relative pull-left w100 k2t-step1-span">
+                    <select formControlName="tour" class="k2t-step1-select pull-left w100" >
+                        <option [ngValue]="null">Select a Tour</option>
+                        <option value="Tour Elite Chichen Itza">Tour Elite Chichen Itza</option>
+                        <option value="Tour Tulum and Coba">Tour Tulum and Coba</option>
+                        <option value="Fly Chichen-Itza">Fly Chichen-Itza</option>
+                    </select>
+                </span>
+
+                <span class="pull-left w100 relative k2t-step1-input">
+              <input formControlName="fecha" name="fecha" class="k2t-select-checkin pull-left w100" placeholder="Date" />
+            </span>
+                <div class="pull-left w100 k2t-select-people">
+                    <span class="relative pull-left k2t-step1-span">
+                  <select formControlName="adults" class="k2t-step1-select pull-left w100">
+                    <option [ngValue]="null" >Adult</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                </span>
+                    <span class="relative pull-right k2t-step1-span">
+                  <select formControlName="children" class="k2t-step1-select pull-right w100">
+                    <option [ngValue]="null" >Children</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                </span>
+                </div>
+            </div>
+            <div class="pull-left w100" style="padding:0 20%">
+                <button type="submit" class="k2t-btn-editbooking pull-left">Book Now</button>
+            </div>
+        </form>
+    </div>
+</div>
