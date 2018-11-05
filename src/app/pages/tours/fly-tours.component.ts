@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-page',
-  templateUrl: './page.component.html',
+  selector: 'app-fly-tours',
+  templateUrl: './fly-tours.component.html',
   styles: []
 })
-export class PageComponent implements OnInit {
+export class FlyToursComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-    
   }
 
 }

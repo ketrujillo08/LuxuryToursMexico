@@ -1,6 +1,6 @@
 function onInitHome() {
-    var width = $(window).width();
-    var height = $(window).height();
+    var width = jQuery(window).width();
+    var height = jQuery(window).height();
     var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
     var htmlDivCss = ".tp-caption.Fashion-BigDisplay,.Fashion-BigDisplay{color:rgba(0,0,0,1.00);font-size:60px;line-height:60px;font-weight:900;font-style:normal;font-family:Raleway;padding:0px 0px 0px 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px}.tp-caption.Fashion-BigDisplay,.Fashion-BigDisplay{color:rgba(0,0,0,1.00);font-size:60px;line-height:60px;font-weight:900;font-style:normal;font-family:Raleway;padding:0px 0px 0px 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px}.tp-caption.whitebig,.whitebig{color:#ffffff;text-decoration:none;font-size:60px;line-height:1.2px;font-family:Roboto;font-weight:300;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none;text-transform:uppercase}.tp-caption.whitemedium,.whitemedium{color:#fff;background-color:transparent;text-decoration:none;font-size:20px;font-family:\"Roboto\";font-weight:300;line-height:30px;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none;text-align:center}";
     if (htmlDiv) {
@@ -56,7 +56,7 @@ function onInitHome() {
         } else {
             revapi2 = tpj("#rev_slider_2_1").show().revolution({
                 sliderType: "standard",
-                jsFileLocation: "revolution/js/",
+                jsFileLocation: "assets/revolution/js/",
                 sliderLayout: "fullwidth",
                 dottedOverlay: "none",
                 delay: 5000,
@@ -64,7 +64,7 @@ function onInitHome() {
                     keyboardNavigation: "off",
                     keyboard_direction: "horizontal",
                     mouseScrollNavigation: "off",
-                    onHoverStop: "on",
+                    onHoverStop: "off",
                     touch: {
                         touchenabled: "on",
                         swipe_threshold: 75,
@@ -109,10 +109,10 @@ function onInitHome() {
                 gridheight: height + 50,
                 lazyType: "none",
                 shadow: 0,
-                spinner: "off",
-                stopLoop: "off",
+                spinner: "on",
+                stopLoop: "on",
                 stopAfterLoops: -1,
-                stopAtSlide: -1,
+                stopAtSlide: 0,
                 shuffle: "off",
                 autoHeight: "off",
                 hideThumbsOnMobile: "off",

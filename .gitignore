@@ -8,7 +8,10 @@
 
 # dependencies
 /node_modules
-
+#config
+/src/app/config
+#Images
+/src/assets/images
 # IDEs and editors
 /.idea
 .project

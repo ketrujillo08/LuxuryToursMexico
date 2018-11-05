@@ -11,16 +11,50 @@ import { ChichenComponent } from './tours/chichen/chichen.component';
 import { TulumCobaComponent } from './tours/tulum-coba/tulum-coba.component';
 import { ChichenitzaByAirplaneComponent } from './tours/chichenitza-by-airplane/chichenitza-by-airplane.component';
 import { ComponentModule } from '../components/component.module';
+import { ServiceModule } from "../services/service.module";
+import { CommonModule } from "@angular/common";
+import { ChichenNightsComponent } from './tours/chichen-nights/chichen-nights.component';
+import { FlyToursComponent } from './tours/fly-tours.component';
+import { ScenicComponent } from './tours/scenic/scenic.component';
 
 
 
 
 @NgModule({
-    declarations:[PageComponent, HomeComponent, ContactComponent
-        ,AboutComponent, GalleryComponent, ToursComponent, ChichenComponent, TulumCobaComponent, ChichenitzaByAirplaneComponent],
-    exports:[PageComponent,HomeComponent,ContactComponent
-        ,AboutComponent,GalleryComponent,ToursComponent,ChichenComponent,TulumCobaComponent,ChichenitzaByAirplaneComponent],
-    imports:[PAGES_ROUTE,SharedModule,ComponentModule]
+    declarations: [
+        PageComponent,
+        HomeComponent,
+        ContactComponent,
+        AboutComponent,
+        GalleryComponent,
+        ToursComponent,
+        ChichenComponent,
+        TulumCobaComponent,
+        ChichenitzaByAirplaneComponent,
+        ChichenNightsComponent,
+        FlyToursComponent,
+        ScenicComponent],
+    exports: [
+        PageComponent,
+        HomeComponent,
+        ContactComponent,
+        AboutComponent,
+        GalleryComponent,
+        ToursComponent,
+        ChichenComponent,
+        TulumCobaComponent,
+        ChichenitzaByAirplaneComponent,
+        ChichenNightsComponent,
+        FlyToursComponent,
+        ScenicComponent],
+    imports: [
+        PAGES_ROUTE,
+        SharedModule,
+        ComponentModule,
+        ServiceModule,
+        CommonModule]
 })
 
-export class PageModule{}
+export class PageModule {
+
+}

@@ -1,4 +1,4 @@
-<div class="event-entry-meta pull-right">
+<div class="event-entry-meta" [ngClass]="classPull">
     <div class="k2t-branch-confirm w100 k2t-step1-right pull-right">
         <form ngNativeValidate [formGroup]="formulario" (ngSubmit)="registrarStepOne();">
             <p class="title-confirm">Book Now</p>
@@ -21,6 +21,8 @@
                         <option value="Tour Elite Chichen Itza">Tour Elite Chichen Itza</option>
                         <option value="Tour Tulum and Coba">Tour Tulum and Coba</option>
                         <option value="Fly Chichen-Itza">Fly Chichen-Itza</option>
+                        <option value="Scenic Flight Tour">Scenic Flight Tour</option>
+                        <option value="Nights of Kukulcan">Nights of Kukulcan</option>
                     </select>
                 </span>
 
